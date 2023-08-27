@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style.css" />
+  <link type="favicon" rel="icon" href="./images/hammer.png" />
+  <title>Whack A Mole</title>
+</head>
+
+<body>
+  <div class="w-full bg-green-700 h-[10vh]">
+    <h1 class="absolute mt-28 w-full text-center text-5xl font-permanentMarker select-none"> Whack-A-Mole</h1>
+  </div>
+  <div class="bg-green-700 flex justify-center items-center w-full h-[90vh] select-none">
+    <div class="flex justify-center items-center mt-10 gap-10">
+      <div class="w-[50rem] grid grid-cols-3 gap-y-2  rounded-lg p-4">
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+          
+          <img class="mole mole-1" src="./images/mole.png" alt="mole">
+          <img class="dirt" src="./images/dirt.png" alt="dirt" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-2" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-3" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-4" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-5" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-6" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-7" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-8" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+
+        <div class="mole-div">
+          <div class="hammer-div absolute h-40 z-10">
+            <img class="hammer" src="./images/hammer.png" alt="hammer" class="mole-img" />
+          </div>
+
+          <img class="mole mole-9" src="./images/mole.png" alt="">
+          <img class="dirt" src="./images/dirt.png" alt="" />
+        </div>
+      </div>
+
+      <div class="w-60 h-96 bg-orange-300 rounded-lg flex flex-col justify-between items-center">
+
+        <div class="text-center mt-8">
+          <h1 id="score" class="text-2xl font-permanentMarker select-none">Score:0</h1>
+          <h1 id="high-score" class="text-2xl font-permanentMarker mt-4 select-none">High Score:0</h1>
+        </div>
+        <div id="start-button" class="mb-8 rounded-lg bg-red-500 text-center px-8 py-2 shadow-lg shadow-black/50 hover:cursor-pointer active:shadow-md">
+          <h1 class="text-2xl font-permanentMarker select-none">Start</h1>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="./hammerAnim.js"></script>
+    <script type="module" src="./controller.js"></script>
+</body>
+
+</html>
